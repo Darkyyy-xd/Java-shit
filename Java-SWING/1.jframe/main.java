@@ -1,3 +1,4 @@
+import java.awt.Color;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
@@ -5,7 +6,7 @@ public class main {
     public static void main (String[] args) {
 
         // JFrame = a gui window
-        
+        /*
         JFrame frame = new JFrame(); // Creates a new frame
         
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Exit button
@@ -15,7 +16,11 @@ public class main {
         frame.setVisible(true); // Enbales visiblity for the Window
         
         ImageIcon image = new ImageIcon("plank.png");
-        frame.setIconImage(image.getImage());
+        frame.setIconImage(image.getImage()); // change icon of frame
+        frame.getContentPane().setBackground(Color.green); //change color of background
+        frame.getContentPane().setBackground(new Color(0,0,0)); // Custom R G B colors (customisable colors for background) or HEXADECIMAL color values
+        */
+        MyFrame myFrame = new MyFrame();
 
     }
 }
